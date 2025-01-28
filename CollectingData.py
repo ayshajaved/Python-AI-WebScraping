@@ -44,9 +44,8 @@ class CollectingData():
                 self.data['Price'].append(price)
             else:
                 self.data['Price'].append(None)
-   
-        
         self.create_dataframe()
+        
     def create_dataframe(self):
         #Creating a dataframe from the data collected
         self.df = pd.DataFrame(self.data)
